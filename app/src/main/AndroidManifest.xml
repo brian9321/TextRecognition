@@ -14,21 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TextRecognition"
         tools:targetApi="31">
+        <activity
+            android:name=".textRecognition.StaticActivity"
+            android:exported="false" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
         <activity
-            android:name=".LiveCameraActivity"
+            android:name=".textRecognition.LiveCameraActivity"
             android:exported="false" />
         <activity
-            android:name=".StaticActivity"
+            android:name=".faceRecognition.FaceDetectionActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

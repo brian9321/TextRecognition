@@ -1,4 +1,4 @@
-package com.example.textrecognition
+package com.example.textrecognition.textRecognition
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -11,6 +11,7 @@ import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.content.ContextCompat
+import com.example.textrecognition.R
 import com.google.mlkit.vision.common.InputImage
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors

@@ -1,4 +1,4 @@
-package com.example.textrecognition
+package com.example.textrecognition.textRecognition
 
 import android.content.Context
 import android.net.Uri

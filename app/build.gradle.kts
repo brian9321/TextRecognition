@@ -8,7 +8,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.textrecognition"
+        applicationId = "com.example.recognition"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -53,4 +53,5 @@ dependencies {
     implementation("androidx.camera:camera-view:$camerax_version")
     implementation("androidx.camera:camera-extensions:$camerax_version")
     implementation("com.google.mlkit:text-recognition:16.0.1")
+    implementation ("com.google.mlkit:face-detection:16.1.7")
 }
